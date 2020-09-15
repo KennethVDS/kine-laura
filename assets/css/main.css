@@ -227,7 +227,7 @@ input, select, textarea {
 	h6 {
 		font-size: 0.6em;
 	}
-
+	
 	@media screen and (max-width: 736px) {
 
 		h1 {
@@ -1827,9 +1827,9 @@ input, select, textarea {
 		transition: border-color 0.2s ease;
 		background-color: transparent;
 		border: solid 1px !important;
-		border-color: rgba(255, 255, 255, 0.15) !important;
+		border-color: #008080 !important;
 		border-radius: 3em;
-		color: #ffffff !important;
+		color: #000000 !important;
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.6em;
@@ -3861,7 +3861,9 @@ input, select, textarea {
 			#sidebar {
 				width: 100%;
 			}
-
+			#intro {
+				height: 100%;
+			}
 		}
 
 /* Intro */
@@ -3900,4 +3902,11 @@ input, select, textarea {
 				background-attachment: scroll;
 			}
 
+		}
+
+		.info  p {
+			color: #000000;
+		}
+		#four {
+			background-color: rgba(187, 184, 184, 0.55);
 		}
