@@ -2438,7 +2438,7 @@ input, select, textarea {
 		input[type="radio"]:checked + label:before {
 			background: #ffffff;
 			border-color: #ffffff;
-			color: #b74e91;
+			color: #008080;
 			content: '\f00c';
 		}
 
@@ -3016,7 +3016,7 @@ input, select, textarea {
 				-webkit-transition: opacity 1s ease;
 				-ms-transition: opacity 1s ease;
 				transition: opacity 1s ease;
-				background: rgba(0, 121, 121, 0.33);
+				background: rgba(31, 31, 31, 0.33);
 				content: '';
 				display: block;
 				height: 100%;
@@ -3893,7 +3893,7 @@ input, select, textarea {
 			}
 
 			@media screen and (max-width: 736px) {
-
+				
 				#intro p {
 					font-size: 1em;
 				}
@@ -3996,4 +3996,12 @@ input, select, textarea {
   @keyframes fade {
 	from {opacity: .4}
 	to {opacity: 1}
+  }
+
+  #Laura {
+	width: 55%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 22px;
   }
