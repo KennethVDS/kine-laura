@@ -3501,7 +3501,11 @@ input, select, textarea {
 			}
 
 		}
-
+		
+	#footer {
+		background-color: #34313d;
+	}
+	
 	#footer > .inner a {
 		border-bottom-color: rgba(255, 255, 255, 0.15);
 	}
