@@ -188,6 +188,7 @@ input, select, textarea {
 			margin: 0 0 1.3em 0;
 			position: relative;
 			padding-bottom: 0.35em;
+			font-size: 2em;
 		}
 
 			h1.major:after {
@@ -1939,7 +1940,7 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			border-color: rgba(255, 255, 255, 0.55) !important;
+			border-color: rgba(0, 128, 128, 0.33) !important;
 		}
 
 			input[type="submit"]:hover:after,
@@ -3917,10 +3918,12 @@ input, select, textarea {
 
 /* Slideshow container */
 .slideshow-container {
-	max-width: 33%;
-	display: block;
+	max-width: 44%;
+	display: flex;
 	margin-left: auto;
 	margin-right: auto;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
   }
   
   /* Hide the images by default */
@@ -4005,3 +4008,21 @@ input, select, textarea {
 	margin-right: auto;
 	padding-bottom: 22px;
   }
+
+  @media screen and (max-width: 444px) {
+				
+	#Laura {
+		width: 77%;
+		padding-bottom: 44px;
+	  }
+	  .slideshow-container {
+		max-width: 88%;
+	  }
+	  .logoinfo {
+		  width: 44%;
+	  }
+}
+
+#buttonform, #buttonintro {
+	color: #ffffff !important;
+}
