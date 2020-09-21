@@ -26,3 +26,33 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+try{
+  document.createEvent("TouchEvent");
+
+  // Here we're ensured touch capabilities
+  var scroll = document.getElementById('slideshow-swipe');
+  var start = null;
+  var clickIfEnd = true;
+  scroll.addEventListener('touchstart', function (e) {
+    start = e.touches[0].pageX;
+    clickIfEnd = true;
+    e.preventDefault();
+  }, false);
+  scroll.addEventListener('touchmove', function (e) {
+    this.scrollLeft = start - e.touches[0].pageX;
+    clickIfEnd = false;
+    e.preventDefault();
+  }, false);
+  scroll.addEventListener('touchend', function (e) {
+    if (clickIfEnd) {
+      if (e) {
+        clickIfEnd = e.target;
+        // Add a delay before treating this as a click, in case it was accidental
+        setTimeout(arguments.callee, 100);
+      } else {
+        // clickIfEnd is the element that was clicked!
+      }
+    }
+  }, false);
+} catch(e){}
