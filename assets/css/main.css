@@ -4014,7 +4014,9 @@ input, select, textarea {
 	margin-right: auto;
 	padding-bottom: 22px;
   }
-
+  .logoinfo {
+	width: 100%;
+}
   @media screen and (max-width: 444px) {
 				
 	#Laura {
@@ -4023,9 +4025,6 @@ input, select, textarea {
 	  }
 	  .slideshow-container {
 		max-width: 88%;
-	  }
-	  .logoinfo {
-		  width: 100%;
 	  }
 }
 
