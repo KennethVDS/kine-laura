@@ -3376,8 +3376,8 @@ input, select, textarea {
 			font-weight: bold;
 		}
 		#header > a {
-			max-width: 555px;
-			min-height: 222px;
+			max-width: 333px;
+			max-height: 222px;
 		}
 		#header > nav {
 			-moz-flex: 1;
