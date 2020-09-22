@@ -3925,6 +3925,7 @@ input, select, textarea {
 .slideshow-container {
 	max-width: 33%;
 	display: flex;
+	position: relative;
 	margin-left: auto;
 	margin-right: auto;
 	overflow-x: auto;
