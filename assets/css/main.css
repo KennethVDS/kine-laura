@@ -1811,6 +1811,18 @@ input, select, textarea {
 		}
 
 /* Button */
+	#afspraken {
+		display: flex;
+		float: right;
+		justify-content: right;
+		align-items: center;
+		height: auto;
+	}
+	#afspraakbutton {
+		float: right;
+		color:rgba(255, 255, 255, 0.55)!important;
+		margin-top: -25;
+	}
 
 	input[type="submit"],
 	input[type="reset"],
@@ -2606,7 +2618,7 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
-
+			
 /* List */
 
 	ol {

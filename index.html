@@ -3,6 +3,10 @@
 	<head>
 		<title>Kine Laura Hanssens</title>
 		<meta charset="utf-8" />
+		<meta name="description" content="Free Web tutorials">
+		<meta name="keywords" content="Kinesitherapie, kinesitherapeut, taping, kinesiotaping">
+		<meta name="keywords" content="Kinesist, kine, Zele">
+		<meta name="author" content="Laura Hanssens">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -16,6 +20,7 @@
 						<ul>
 							<li><a href="#intro">Welkom</a></li>
 							<li><a href="#one">Diensten</a></li>
+							<li><a href="#praktijk">De praktijk</a></li>
 							<li><a href="#two">Wie ben ik</a></li>
 							<li><a href="#three">Contact</a></li>
 						</ul>
@@ -28,11 +33,12 @@
 
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
+						<div class="inner fade">
 							<img src="./images/Kine_Laura_teal_volledig.png" width="77%">
 							<p>Kinesitherapie praktijk in centrum Zele</p>
 							<p>Ravestraat 8</p>
 							<p>0493/ 84 06 39</p>
+							<div id="afspraken"><button id="afspraakbutton"><a href="https://emtagenda.crossuite.com/KineLaura/l/n5r4v5z5j454s2849434/o/d4y2b474">afspraak maken</a></button></div>
 						</div>
 					</section>
 
@@ -90,6 +96,44 @@
 					</section>
 
 				<!-- Two -->
+				<section id="two" class="wrapper style3 fade-up">
+					<div id="praktijk"></div>
+					<div class="inner">
+						<h2>De praktijk</h2>
+						<div class="slideshow-container">
+
+							<div class="mySlides fade">
+							  <div class="numbertext">1 / 4</div>
+							  <img src="./images/praktijk1.jpg" style="width:100%">
+							</div>
+							
+							<div class="mySlides fade">
+							  <div class="numbertext">2 / 4</div>
+							  <img src="./images/praktijk2.jpg" style="width:100%">
+							</div>
+							
+							<div class="mySlides fade">
+							  <div class="numbertext">3 / 4</div>
+							  <img src="./images/praktijk3.jpg" style="width:100%">
+							</div>
+							
+							<div class="mySlides fade">
+								<div class="numbertext">4 / 4</div>
+								<img src="./images/praktijk4.jpg" style="width:100%">
+							  </div>
+							</div>
+							<br>
+
+							<div style="text-align:center; display: none;">
+								<span class="dot"></span> 
+								<span class="dot"></span> 
+								<span class="dot"></span> 
+								<span class="dot"></span> 
+							</div>
+					</div> 
+				</section>
+
+				<!-- Three -->
 					<section id="two" class="wrapper style3 fade-up">
 						<div class="inner">
 							<h2>Wie ben ik </h2>
@@ -112,14 +156,13 @@
 							</div>
 						</div>
 					</section>
-
-				<!-- Three -->
+				<!--contact section-->
 					<section id="three" class="wrapper style1 fade-up">
 						<div class="inner">
 							<h2>Contact</h2>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
+									<form action="mailto:laura.hanssens@hotmail.be" id="contactForm" method="post" enctype="text/plain">
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Naam</label>
@@ -135,7 +178,7 @@
 											</div>
 										</div>
 										<ul class="actions">
-											<li><a href="" id="buttonform" class="button submit">Verstuur bericht</a></li>
+											<li><a type="submit" value="Send" id="buttonform" class="button submit">Verstuur bericht</a></li>
 										</ul>
 									</form>
 								</section>
@@ -165,6 +208,8 @@
 										<li>
 											<h3>Ondernemingsnummer</h3>
 											<span>BE 0700.636.938</span>
+											<h3>RIZIV nummer</h3>
+											<span>5-54684-59-527</span>
 										</li>
 									</ul>
 								</section>
@@ -191,5 +236,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="./js/jqBootstrapValidation.js"></script>
+			<script src="assets/js/contact.js"></script>
+			<script src="assets/js/slides.js"></script>
 	</body>
 </html>
