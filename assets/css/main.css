@@ -1817,6 +1817,7 @@ input, select, textarea {
 		justify-content: right;
 		align-items: center;
 		height: auto;
+		margin-right: 3em;
 	}
 	#afspraakbutton {
 		float: right;
@@ -2223,7 +2224,13 @@ input, select, textarea {
 					position: relative;
 					top: 0;
 				}
-
+				#afspraken {
+					display: flex;
+					float: right;
+					justify-content: center;
+					align-items: center;
+					height: auto;
+				}
 		}
 
 /* Form */
@@ -3403,7 +3410,7 @@ input, select, textarea {
 				margin: 0;
 				padding: 0;
 			}
-
+			
 				#header > nav > ul > li {
 					display: inline-block;
 					margin-left: 1.75em;
@@ -3432,7 +3439,15 @@ input, select, textarea {
 						#header > nav > ul > li a.active {
 							color: #ffffff;
 						}
-
+						.scroll {
+							white-space: nowrap;
+							overflow-x: auto;
+							-webkit-overflow-scrolling: touch;
+							-ms-overflow-style: -ms-autohiding-scrollbar;
+						  }
+						  .scroll::-webkit-scrollbar {
+							display: none;
+						  }
 		@media screen and (max-width: 736px) {
 
 			#header {
@@ -4050,3 +4065,4 @@ input, select, textarea {
 #tapingtext {
 	text-align: center !important;
 }
+
