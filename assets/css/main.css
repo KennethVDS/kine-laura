@@ -3764,7 +3764,6 @@ input, select, textarea {
 				height: 3.5em;
 				left: 0;
 				line-height: 3.5em;
-				overflow: hidden;
 				padding: 0;
 				text-align: center;
 				top: 0;
@@ -3782,38 +3781,40 @@ input, select, textarea {
 					align-items: stretch;
 					height: inherit;
 					line-height: inherit;
+					overflow-y: hidden;
 				}
 
 				#sidebar nav {
+					display: inline-flex;
 					height: inherit;
 					line-height: inherit;
+					
 				}
 
 					#sidebar nav ul {
 						display: -moz-flex;
 						display: -webkit-flex;
 						display: -ms-flex;
-						display: inline;
+						display: inline-block;
 						height: inherit;
 						line-height: inherit;
 						margin: 0;
-						
-						  white-space: nowrap;
+						white-space: nowrap;
 					}
 
 						#sidebar nav ul li {
 							display: inline-block;
 							height: inherit;
 							line-height: inherit;
-							margin: 0 0 0 2em;
+							margin:  0 1em 0 1em;
 							padding: 0;
+							overflow-y: hidden;
 						}
 
 					#sidebar nav a {
 						height: inherit;
 						line-height: inherit;
 						padding: 0;
-						overflow-x: scroll;
 					}
 
 						#sidebar nav a:after {
