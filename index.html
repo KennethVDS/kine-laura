@@ -16,12 +16,12 @@
 		<!-- Sidebar -->
 			<section id="sidebar">
 				<div class="inner">
-					<nav>
+					<nav class="main-nav">
 						<ul class="scroll">
 							<li><a href="#intro">Welkom</a></li>
 							<li><a href="#one">Diensten</a></li>
 							<li><a href="#praktijk">De praktijk</a></li>
-							<li><a href="#two">Wie ben ik</a></li>
+							<li><a href="#wiebenik">Wie ben ik</a></li>
 							<li><a href="#three">Contact</a></li>
 						</ul>
 					</nav>
@@ -36,7 +36,7 @@
 						<div class="inner fade">
 							<img src="./images/Kine_Laura_teal_volledig.png" width="77%">
 							<p>Kinesitherapie praktijk in centrum Zele</p>
-							<p>Ravestraat 8</p>
+							<p >Ravestraat 8</p>
 							<p id="nummerhomepage">0493/ 84 06 39</p>
 							<div id="afspraken"><button id="afspraakbutton"><a href="https://emtagenda.crossuite.com/KineLaura/l/n5r4v5z5j454s2849434/o/d4y2b474">afspraak maken</a></button></div>
 						</div>
@@ -45,11 +45,11 @@
 				<!-- One -->
 					<section id="one" class="wrapper style2 spotlights">
 						<section class="info">
-							<a href="#" class="image"><img src="images/Algemene-revalidatie.JPG" alt="Algemene revalidatie" data-position="center center"/></a>
+							<a class="image"><img src="images/Algemene-revalidatie.JPG" alt="Algemene revalidatie" data-position="center center"/></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Algemene revalidatie</h2>
-									<p>Herstel na blessure, ongeval of medische ingreep.</p>
+									<p class="firsttwoinfoparagraph">Herstel na blessure, ongeval of medische ingreep.</p>
 									<ul class="actions">
 										<li><a href="algemeen.html"  class="button">Meer Info</a></li>
 									</ul>
@@ -57,11 +57,11 @@
 							</div>
 						</section>
 						<section class="info">
-							<a href="#" class="image"><img src="images/Neurologische-revalidatie-geknipt.jpg" alt="" data-position="center center" /></a>
+							<a class="image"><img src="images/Neurologische-revalidatie-geknipt.jpg" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Neurologische revalidatie</h2>
-									<p>Revalidatie van aandoeningen van het zenuwstelsel.  <br />
+									<p class="firsttwoinfoparagraph">Revalidatie van aandoeningen van het zenuwstelsel.  <br />
 										Onder meer ziekte van Parkinson, CVA, MS, ALS, spierziekten…</p>
 									<ul class="actions">
 										<li><a href="neuro.html" class="button">Meer Info</a></li>
@@ -70,7 +70,7 @@
 							</div>
 						</section>
 						<section class="info">
-							<a href="#" class="image"><img src="images/Dry-Needling2.JPG" alt="" data-position="center center" /></a>
+							<a class="image"><img src="images/Dry-Needling2.JPG" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Dry Needling</h2>
@@ -82,7 +82,7 @@
 							</div>
 						</section>
 						<section class="info">
-							<a href="#" class="image"><img src="images/Dynamic-Taping.JPG" alt="" data-position="center center" /></a>
+							<a class="image"><img src="images/Dynamic-Taping.JPG" alt="" data-position="center center" /></a>
 							<div class="content" id="four">
 								<div class="inner">
 									<h2>Taping</h2>
@@ -97,45 +97,37 @@
 
 				<!-- Two -->
 				<section id="two" class="wrapper style3 fade-up">
-					<div id="praktijk"></div>
-					<div class="inner">
-						<h2>De praktijk</h2>
-						<div class="slideshow-container">
-
-							<div class="mySlides fade">
-							  <div class="numbertext">1 / 4</div>
-							  <img src="./images/praktijk1.jpg" style="width:100%">
+					<div id="praktijk" class="inner">
+						<div style="text-align:center">
+							<h2>De praktijk</h2>
+						  </div>
+						  
+						  <!-- The four columns -->
+						  <div class="row">
+							<div class="column">
+							  <img src="./images/praktijk1.jpg" alt="" style="width:100%" onclick="myFunction(this);">
 							</div>
-							
-							<div class="mySlides fade">
-							  <div class="numbertext">2 / 4</div>
-							  <img src="./images/praktijk2.jpg" style="width:100%">
+							<div class="column">
+							  <img src="./images/praktijk2.jpg" alt="" style="width:100%" onclick="myFunction(this);">
 							</div>
-							
-							<div class="mySlides fade">
-							  <div class="numbertext">3 / 4</div>
-							  <img src="./images/praktijk3.jpg" style="width:100%">
+							<div class="column">
+							  <img src="./images/praktijk3.jpg" alt="" style="width:100%" onclick="myFunction(this);">
 							</div>
-							
-							<div class="mySlides fade">
-								<div class="numbertext">4 / 4</div>
-								<img src="./images/praktijk4.jpg" style="width:100%">
-							  </div>
+							<div class="column">
+							  <img src="./images/praktijk4.jpg" alt="" style="width:100%" onclick="myFunction(this);">
 							</div>
-							<br>
-
-							<div style="text-align:center; display: none;">
-								<span class="dot"></span> 
-								<span class="dot"></span> 
-								<span class="dot"></span> 
-								<span class="dot"></span> 
-							</div>
-					</div> 
+						  </div>
+						  
+						  <div class="container">
+							<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+							<img id="expandedImg" style="width:100%">
+							<div id="imgtext"></div>
+						  </div>
 				</section>
 
 				<!-- Three -->
 					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
+						<div id="wiebenik" class="inner">
 							<h2>Wie ben ik </h2>
 							<p>In 2018 studeerde ik af aan de KU Leuven als master in de revalidatiewetenschappen en kinesitherapie met specialisatie neurologische aandoeningen. Na 2 jaar ervaring in een groepspraktijk in Hamme keer ik terug naar het thuisfront en ga aan de slag als kinesitherapeut in Zele.<br /> Als kinesitherapeut streef ik ernaar om samen met u te bekijken wat uw hulpvraag is en welke doelen we kunnen vooropstellen. Voor de ene persoon betekent dit terug kunnen functioneren en het dagelijkse leven opnieuw oppakken, voor de andere persoon betekent dit opnieuw kunnen sporten en deelnemen aan hobby’s. Tijdens elke behandeling staat u als persoon centraal. We houden rekening met uw persoonlijke mogelijkheden, alsook met sociale en omgevingsfactoren die het revalidatieproces kunnen beïnvloeden.</p>
 							<img id="Laura" src="./images/Laura-geknipt.jpg" />
